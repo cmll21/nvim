@@ -18,6 +18,11 @@ return {
     lspconfig.lua_ls.setup({ capabilities = capabilities })
     lspconfig.ts_ls.setup({ capabilities = capabilities })
     lspconfig.pyright.setup({ capabilities = capabilities })		--
+    lspconfig.ocamllsp.setup({
+      on_attach = function(client, bufnr)
+      client.server_capabilities.documentFormattingProvider = true
+      end,
+    })
 
   end,
 }
