@@ -6,6 +6,9 @@ return {
     "nvim-tree/nvim-web-devicons", -- optional but recommended
     "MunifTanjim/nui.nvim",
   },
+  keys = {
+    { "<leader>e", "<cmd>Neotree toggle<cr>", desc = "Toggle Neo-tree" },
+  },
   config = function()
     require("neo-tree").setup({
       filesystem = {
