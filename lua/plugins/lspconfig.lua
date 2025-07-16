@@ -8,20 +8,9 @@ return {
   config = function()
     -- Setup Mason
     require("mason").setup()
-    require("mason-lspconfig").setup({
-      ensure_installed = {
-        "lua_ls",
-        "ts_ls",
-        "pyright",
-        "ocamllsp",
-      },
-      automatic_installation = true,
-    })
 
-    -- Common capabilities
     local capabilities = require("cmp_nvim_lsp").default_capabilities()
 
-    -- Keymaps for LSP attached buffers
     local function on_attach(_, bufnr)
       local map = vim.keymap.set
       local opts = { buffer = bufnr, silent = true }
@@ -37,30 +26,41 @@ return {
       end, opts)
     end
 
-    -- Setup servers
-    local lspconfig = require("lspconfig")
+    require("mason-lspconfig").setup({
+      ensure_installed = {
+        "lua_ls",
+        "ts_ls",
+        "pyright",
+        "ocamllsp",
+      },
+      automatic_installation = true,
+      handlers = {
+        function(server_name)
+          require("lspconfig")[server_name].setup({
+            capabilities = capabilities,
+            on_attach = on_attach,
+          })
+        end,
 
-    lspconfig.lua_ls.setup({
-      capabilities = capabilities,
-      on_attach = on_attach,
-    })
-
-    lspconfig.ts_ls.setup({
-      capabilities = capabilities,
-      on_attach = on_attach,
-    })
-
-    lspconfig.pyright.setup({
-      capabilities = capabilities,
-      on_attach = on_attach,
-    })
-
-    lspconfig.ocamllsp.setup({
-      capabilities = capabilities,
-      on_attach = function(client, bufnr)
-        client.server_capabilities.documentFormattingProvider = true
-        on_attach(client, bufnr)
-      end,
+        -- Override lua_ls with custom settings
+        ["lua_ls"] = function()
+          require("lspconfig").lua_ls.setup({
+            capabilities = capabilities,
+            on_attach = on_attach,
+            settings = {
+              Lua = {
+                diagnostics = {
+                  globals = { "vim" },
+                },
+                workspace = {
+                  checkThirdParty = false,
+                  library = vim.api.nvim_get_runtime_file("", true),
+                },
+              },
+            },
+          })
+        end,
+      },
     })
   end,
 }

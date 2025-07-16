@@ -7,5 +7,13 @@ return {
   {'sainnhe/gruvbox-material', name = 'gruvbox-material' },
   {'folke/tokyonight.nvim', name = 'tokyonight' },
   {'EdenEast/nightfox.nvim', name = 'nightfox' },
-  {'shaunsingh/nord.nvim', name = 'nord' }
+  {'shaunsingh/nord.nvim', name = 'nord' },
+  {
+    'rebelot/kanagawa.nvim',
+    name = 'kanagawa',
+    priority = 1000,
+    config = function()
+      vim.cmd.colorscheme('kanagawa')
+    end,
+  },
 }
