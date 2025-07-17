@@ -10,8 +10,10 @@ return {
         debounce = 75,
         keymap = {
           accept = "<M-l>",
-          next = "<M-]>",
-          prev = "<M-[>",
+          accept_word = "<M-w>",
+          accept_line = "<M-j>",
+          next = "<M-n>",
+          prev = "<M-p>",
           dismiss = "<C-]>",
         },
       },
