@@ -9,10 +9,6 @@ return {
       vim.cmd.colorscheme('catppuccin')
     end,
   },
-  {'sainnhe/everforest', name = 'everforest' },
-  {'sainnhe/gruvbox-material', name = 'gruvbox-material' },
   {'folke/tokyonight.nvim', name = 'tokyonight' },
-  {'EdenEast/nightfox.nvim', name = 'nightfox' },
-  {'shaunsingh/nord.nvim', name = 'nord' },
   { 'rebelot/kanagawa.nvim', name = 'kanagawa' },
 }

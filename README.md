@@ -89,11 +89,7 @@ This is a personal Neovim configuration built with Lua and managed by [lazy.nvim
 | [GitHub Theme](https://github.com/projekt0n/github-nvim-theme)  | GitHub-inspired   |
 | [VS Code Theme](https://github.com/Mofiqul/vscode.nvim)         | VS Code-inspired  |
 | [OneDark](https://github.com/navarasu/onedark.nvim)             | Dark theme        |
-| [Everforest](https://github.com/sainnhe/everforest)             | Forest-inspired   |
-| [Gruvbox Material](https://github.com/sainnhe/gruvbox-material) | Gruvbox variant   |
 | [Tokyo Night](https://github.com/folke/tokyonight.nvim)         | Tokyo-inspired    |
-| [Nightfox](https://github.com/EdenEast/nightfox.nvim)           | Fox-inspired      |
-| [Nord](https://github.com/shaunsingh/nord.nvim)                 | Arctic theme      |
 | [Kanagawa](https://github.com/rebelot/kanagawa.nvim)            | Japanese-inspired |
 
 ## Key Bindings
