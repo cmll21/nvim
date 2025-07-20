@@ -49,7 +49,7 @@ This is a personal Neovim configuration built with Lua and managed by [lazy.nvim
 
 | Plugin                                                                          | Description         |
 | ------------------------------------------------------------------------------- | ------------------- |
-| [neo-tree.nvim](https://github.com/nvim-neo-tree/neo-tree.nvim)                 | File explorer       |
+| [snacks.nvim](https://github.com/folke/snacks.nvim)                             | Enhanced UI tools   |
 | [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim)              | Fuzzy finder        |
 | [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)           | Syntax highlighting |
 | [indent-blankline.nvim](https://github.com/lukas-reineke/indent-blankline.nvim) | Indent guides       |

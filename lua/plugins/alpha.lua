@@ -66,13 +66,14 @@ return {
       buttons = {
         type = "group",
         val = {
-          button("e", "  New file", "<cmd>ene <CR>"),
-          button("SPC f f", "󰈞  Find file"),
-          button("SPC f h", "󰊄  Recently opened files"),
-          button("SPC f r", "  Frecency/MRU"),
-          button("SPC f g", "󰈬  Find word"),
-          button("SPC f m", "  Jump to bookmarks"),
-          button("SPC s l", "  Open last session"),
+          button("e",      "  New file",        "<cmd>ene<CR>"),
+          button("SPC SPC","  Smart find",      "<cmd>lua require('snacks').picker.smart()<CR>"),
+          button("SPC ff", "  Find files",       "<cmd>lua require('snacks').picker.files()<CR>"),
+          button("SPC fr", "  Recent files",     "<cmd>lua require('snacks').picker.recent_files()<CR>"),
+          button("SPC ,",  "  Buffers",          "<cmd>lua require('snacks').picker.buffers()<CR>"),
+          button("SPC /",  "  Grep",             "<cmd>lua require('snacks').picker.grep()<CR>"),
+          button("SPC n",  "  Notifications",    "<cmd>lua require('snacks').picker.notifications()<CR>"),
+          button("SPC e",  "  Explorer",         "<cmd>lua require('snacks').explorer()<CR>"),
         },
         opts = {
           spacing = 1,
