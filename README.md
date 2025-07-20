@@ -6,7 +6,7 @@ This is a personal Neovim configuration built with Lua and managed by [lazy.nvim
 
 ### Prerequisites
 
-- Neovim >= 0.8.0
+- Neovim >= 0.11.0
 - Git
 - A C compiler (for Tree-sitter)
 - [ripgrep](https://github.com/BurntSushi/ripgrep) (for Telescope live_grep)
@@ -14,7 +14,7 @@ This is a personal Neovim configuration built with Lua and managed by [lazy.nvim
 
 ### Steps
 
-1. Backup your existing configuration:
+1. Backup existing configuration:
 
    ```bash
    mv ~/.config/nvim ~/.config/nvim.backup
@@ -79,6 +79,7 @@ This is a personal Neovim configuration built with Lua and managed by [lazy.nvim
 | [copilot.lua](https://github.com/zbirenbaum/copilot.lua)              | GitHub Copilot     |
 | [CopilotChat.nvim](https://github.com/CopilotC-Nvim/CopilotChat.nvim) | Copilot chat       |
 | [auto-session](https://github.com/rmagatti/auto-session)              | Session management |
+| [avante.nvim](https://github.com/yetone/avante.nvim)                  | AI Editing         |
 
 ### Themes
 
@@ -101,13 +102,13 @@ This is a personal Neovim configuration built with Lua and managed by [lazy.nvim
 
 ### General
 
-| Key          | Action          |
-| ------------ | --------------- |
-| `<leader>e`  | Toggle Neo-tree |
-| `<leader>ff` | Find files      |
-| `<leader>fh` | Recent files    |
-| `<leader>fg` | Live grep       |
-| `<leader>fm` | Bookmarks       |
+| Key               | Action        |
+| ----------------- | ------------- |
+| `<leader>e`       | File Explorer |
+| `<leader><space>` | Smart find    |
+| `<leader>fr`      | Recent files  |
+| `<leader>/`       | Live grep     |
+| `<leader>ff`      | Find files    |
 
 ### LSP
 
@@ -141,13 +142,12 @@ This is a personal Neovim configuration built with Lua and managed by [lazy.nvim
 │   │   ├── lazy.lua        # Plugin manager setup
 │   │   └── options.lua     # Neovim options
 │   └── plugins/
-│       ├── alpha.lua       # Start screen
+│       ├── ...
 │       ├── cmp.lua         # Completion
 │       ├── colorscheme.lua # Color schemes
 │       ├── copilot.lua     # AI assistance
-│       ├── gitsigns.lua    # Git decorations
 │       ├── lspconfig.lua   # LSP configuration
-│       ├── telescope.lua   # Fuzzy finder
+│       ├── snacks.lua      # QoL tools
 │       ├── treesitter.lua  # Syntax highlighting
-│       └── ...            # Other plugins
+│       └── ...             # Other plugins
 ```
