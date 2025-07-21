@@ -52,7 +52,7 @@ return {
       { "<leader>ff",      function() require("snacks").picker.files() end,        desc = "Find files" },
       { "<leader>fg",      function() require("snacks").picker.git_files() end,    desc = "Find git files" },
       { "<leader>fr",     function() require("snacks").picker.recent_files() end,      desc = "Recent files" },
-      { "<leader>t",           function() require("snacks").terminal() end, desc = "Toggle terminal" },
+      { "<C-/>",           function() require("snacks").terminal() end, desc = "Toggle terminal" },
     },
   }
 }
