@@ -122,9 +122,7 @@ This is a personal Neovim configuration built with Lua and managed by [lazy.nvim
 
 | Key          | Action      |
 | ------------ | ----------- |
-| `<leader>gg` | Open Neogit |
-| `<leader>gd` | Git diff    |
-| `<leader>gb` | Git blame   |
+| `<leader>g` | Open Neogit |
 
 ## Configuration Structure
 

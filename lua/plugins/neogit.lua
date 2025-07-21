@@ -6,6 +6,6 @@ return {
     "nvim-telescope/telescope.nvim",
   },
   keys = {
-    { "<leader>gg", "<cmd>Neogit<cr>", desc = "Neogit" },
+    { "<leader>g", "<cmd>Neogit<cr>", desc = "Neogit" },
   },
 }
