@@ -141,8 +141,6 @@ This is a personal Neovim configuration built with Lua and managed by [lazy.nvim
 | Key          | Action              |
 | ------------ | ------------------- |
 | `<leader>g` | Open Neogit         |
-| `<leader>sl`| Restore Last Session|
-| `<leader>ss`| Search Sessions     |
 
 ## Configuration Structure
 
