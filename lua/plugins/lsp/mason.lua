@@ -17,10 +17,16 @@ return {
 
     mason_lspconfig.setup({
       ensure_installed = {
-        "lua_ls",
-        "lua_ls",
-        "pyright",
-        "ocamllsp",
+        "lua_ls", -- Lua
+        "ts_ls", -- TypeScript/JavaScript
+        "pyright", -- Python
+        "ocamllsp", -- OCaml
+        "html", -- HTML
+        "cssls", -- CSS
+        "jsonls", -- JSON
+        "yamlls", -- YAML
+        "bashls", -- Bash
+        "clangd", -- C/C++
       },
       automatic_installation = true,
       handlers = vim.tbl_extend("force", {
