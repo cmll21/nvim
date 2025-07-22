@@ -8,7 +8,7 @@ return {
     require("mason-tool-installer").setup({
       ensure_installed = {
         -- Formatters
-        "prettier",
+        "prettierd",
         "stylua",
         "black",
         "clang-format",
