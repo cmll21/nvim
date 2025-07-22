@@ -36,7 +36,7 @@ This is a personal Neovim configuration built with Lua and managed by [lazy.nvim
 
 ## Plugin List
 
-### Core Plugins
+#### Core Plugins
 
 | Plugin                                                       | Description       |
 | ------------------------------------------------------------ | ----------------- |
@@ -45,7 +45,7 @@ This is a personal Neovim configuration built with Lua and managed by [lazy.nvim
 | [lualine.nvim](https://github.com/nvim-lualine/lualine.nvim) | Status line       |
 | [which-key.nvim](https://github.com/folke/which-key.nvim)    | Key binding hints |
 
-### Editor Enhancement
+#### Editor Enhancement
 
 | Plugin                                                                          | Description         |
 | ------------------------------------------------------------------------------- | ------------------- |
@@ -55,7 +55,7 @@ This is a personal Neovim configuration built with Lua and managed by [lazy.nvim
 | [indent-blankline.nvim](https://github.com/lukas-reineke/indent-blankline.nvim) | Indent guides       |
 | [toggleterm.nvim](https://github.com/akinsho/toggleterm.nvim)                   | Terminal management |
 
-### Language Support
+#### Language Support
 
 | Plugin                                                     | Description       |
 | ---------------------------------------------------------- | ----------------- |
@@ -64,7 +64,7 @@ This is a personal Neovim configuration built with Lua and managed by [lazy.nvim
 | [nvim-cmp](https://github.com/hrsh7th/nvim-cmp)            | Auto-completion   |
 | [LuaSnip](https://github.com/L3MON4D3/LuaSnip)             | Snippet engine    |
 
-### Git Integration
+#### Git Integration
 
 | Plugin                                                      | Description     |
 | ----------------------------------------------------------- | --------------- |
@@ -72,7 +72,7 @@ This is a personal Neovim configuration built with Lua and managed by [lazy.nvim
 | [neogit](https://github.com/TimUntersberger/neogit)         | Git interface   |
 | [diffview.nvim](https://github.com/sindrets/diffview.nvim)  | Git diff viewer |
 
-### AI & Productivity
+#### AI
 
 | Plugin                                                                | Description        |
 | --------------------------------------------------------------------- | ------------------ |
@@ -81,7 +81,7 @@ This is a personal Neovim configuration built with Lua and managed by [lazy.nvim
 | [auto-session](https://github.com/rmagatti/auto-session)              | Session management |
 | [avante.nvim](https://github.com/yetone/avante.nvim)                  | AI Editing         |
 
-### Themes
+#### Themes
 
 | Theme                                                           | Description       |
 | --------------------------------------------------------------- | ----------------- |
@@ -96,7 +96,7 @@ This is a personal Neovim configuration built with Lua and managed by [lazy.nvim
 
 **Leader Key**: `Space`
 
-### General
+#### General
 
 | Key               | Action        |
 | ----------------- | ------------- |
@@ -105,8 +105,20 @@ This is a personal Neovim configuration built with Lua and managed by [lazy.nvim
 | `<leader>fr`      | Recent files  |
 | `<leader>/`       | Live grep     |
 | `<leader>ff`      | Find files    |
+| `<leader>,`       | Buffers       |
+| `<leader>:`       | Cmd history   |
+| `<leader>n`       | Notifications |
+| `<C-/>`           | Toggle terminal |
+| `SPC SPC`         | Smart find    |
+| `SPC ff`          | Find files    |
+| `SPC fr`          | Recent files  |
+| `SPC ,`           | Buffers       |
+| `SPC /`           | Grep          |
+| `SPC n`           | Notifications |
+| `SPC e`           | Explorer      |
+| `e`               | New file      |
 
-### LSP
+#### LSP
 
 | Key          | Action               |
 | ------------ | -------------------- |
@@ -117,12 +129,20 @@ This is a personal Neovim configuration built with Lua and managed by [lazy.nvim
 | `<leader>ca` | Code actions         |
 | `<leader>rn` | Rename               |
 | `<leader>f`  | Format               |
+| `<M-l>`      | Accept suggestion    |
+| `<M-w>`      | Accept word          |
+| `<M-j>`      | Accept line          |
+| `<M-n>`      | Next suggestion      |
+| `<M-p>`      | Previous suggestion  |
+| `<C-]>`      | Dismiss suggestion   |
 
-### Git
+#### Git
 
-| Key          | Action      |
-| ------------ | ----------- |
-| `<leader>g` | Open Neogit |
+| Key          | Action              |
+| ------------ | ------------------- |
+| `<leader>g` | Open Neogit         |
+| `<leader>sl`| Restore Last Session|
+| `<leader>ss`| Search Sessions     |
 
 ## Configuration Structure
 
