@@ -32,6 +32,9 @@ vim.opt.hlsearch = false
 vim.opt.splitright = true
 vim.opt.splitbelow = true
 
+-- Use system clipboard
+vim.opt.clipboard = "unnamedplus"
+
 -- Mouse
 vim.opt.mouse = "a"
 
