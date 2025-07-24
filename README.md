@@ -108,7 +108,7 @@ This is a personal Neovim configuration built with Lua and managed by [lazy.nvim
 | `<leader>,`       | Buffers         |
 | `<leader>:`       | Cmd history     |
 | `<leader>n`       | Notifications   |
-| `<leader>t`       | Toggle terminal |
+| `<C-/>`           | Toggle terminal |
 | `SPC SPC`         | Smart find      |
 | `SPC ff`          | Find files      |
 | `SPC fr`          | Recent files    |
