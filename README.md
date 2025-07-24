@@ -60,7 +60,7 @@ This is a personal Neovim configuration built with Lua and managed by [lazy.nvim
 | Plugin                                                     | Description       |
 | ---------------------------------------------------------- | ----------------- |
 | [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig) | LSP configuration |
-| [mason.nvim](https://github.com/williamboman/mason.nvim)   | LSP installer     |
+| [mason.nvim](https://github.com/mason-org/mason.nvim)      | LSP installer     |
 | [nvim-cmp](https://github.com/hrsh7th/nvim-cmp)            | Auto-completion   |
 | [LuaSnip](https://github.com/L3MON4D3/LuaSnip)             | Snippet engine    |
 
@@ -83,14 +83,14 @@ This is a personal Neovim configuration built with Lua and managed by [lazy.nvim
 
 #### Themes
 
-| Theme                                                           | Description       |
-| --------------------------------------------------------------- | ----------------- |
-| [Catppuccin](https://github.com/catppuccin/nvim)                | Default theme     |
-| [GitHub Theme](https://github.com/projekt0n/github-nvim-theme)  | GitHub-inspired   |
-| [VS Code Theme](https://github.com/Mofiqul/vscode.nvim)         | VS Code-inspired  |
-| [OneDark](https://github.com/navarasu/onedark.nvim)             | Dark theme        |
-| [Tokyo Night](https://github.com/folke/tokyonight.nvim)         | Tokyo-inspired    |
-| [Kanagawa](https://github.com/rebelot/kanagawa.nvim)            | Japanese-inspired |
+| Theme                                                          | Description       |
+| -------------------------------------------------------------- | ----------------- |
+| [Catppuccin](https://github.com/catppuccin/nvim)               | Default theme     |
+| [GitHub Theme](https://github.com/projekt0n/github-nvim-theme) | GitHub-inspired   |
+| [VS Code Theme](https://github.com/Mofiqul/vscode.nvim)        | VS Code-inspired  |
+| [OneDark](https://github.com/navarasu/onedark.nvim)            | Dark theme        |
+| [Tokyo Night](https://github.com/folke/tokyonight.nvim)        | Tokyo-inspired    |
+| [Kanagawa](https://github.com/rebelot/kanagawa.nvim)           | Japanese-inspired |
 
 ## Key Bindings
 
@@ -98,25 +98,25 @@ This is a personal Neovim configuration built with Lua and managed by [lazy.nvim
 
 #### General
 
-| Key               | Action        |
-| ----------------- | ------------- |
-| `<leader>e`       | File Explorer |
-| `<leader><space>` | Smart find    |
-| `<leader>fr`      | Recent files  |
-| `<leader>/`       | Live grep     |
-| `<leader>ff`      | Find files    |
-| `<leader>,`       | Buffers       |
-| `<leader>:`       | Cmd history   |
-| `<leader>n`       | Notifications |
-| `<leader>t`           | Toggle terminal |
-| `SPC SPC`         | Smart find    |
-| `SPC ff`          | Find files    |
-| `SPC fr`          | Recent files  |
-| `SPC ,`           | Buffers       |
-| `SPC /`           | Grep          |
-| `SPC n`           | Notifications |
-| `SPC e`           | Explorer      |
-| `e`               | New file      |
+| Key               | Action          |
+| ----------------- | --------------- |
+| `<leader>e`       | File Explorer   |
+| `<leader><space>` | Smart find      |
+| `<leader>fr`      | Recent files    |
+| `<leader>/`       | Live grep       |
+| `<leader>ff`      | Find files      |
+| `<leader>,`       | Buffers         |
+| `<leader>:`       | Cmd history     |
+| `<leader>n`       | Notifications   |
+| `<leader>t`       | Toggle terminal |
+| `SPC SPC`         | Smart find      |
+| `SPC ff`          | Find files      |
+| `SPC fr`          | Recent files    |
+| `SPC ,`           | Buffers         |
+| `SPC /`           | Grep            |
+| `SPC n`           | Notifications   |
+| `SPC e`           | Explorer        |
+| `e`               | New file        |
 
 #### LSP
 
@@ -138,9 +138,9 @@ This is a personal Neovim configuration built with Lua and managed by [lazy.nvim
 
 #### Git
 
-| Key          | Action              |
-| ------------ | ------------------- |
-| `<leader>g` | Open Neogit         |
+| Key         | Action      |
+| ----------- | ----------- |
+| `<leader>g` | Open Neogit |
 
 ## Configuration Structure
 

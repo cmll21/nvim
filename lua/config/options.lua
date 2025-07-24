@@ -35,9 +35,6 @@ vim.opt.splitbelow = true
 -- Mouse
 vim.opt.mouse = "a"
 
--- Clipboard
-vim.opt.clipboard = "unnamedplus" -- use system clipboard
-
 -- Performance
 vim.opt.updatetime = 250
 vim.opt.timeoutlen = 300
@@ -45,4 +42,3 @@ vim.opt.timeoutlen = 300
 -- Wildmenu
 vim.opt.wildmenu = true
 vim.opt.completeopt = { "menuone", "noselect" }
-
