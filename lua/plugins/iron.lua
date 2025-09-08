@@ -8,9 +8,9 @@ return {
 				repl_definition = {
 					sh = { command = { "zsh" } },
 					python = { command = { "ipython" } },
-					r = { command = { "radian" } }, -- for R
+					r = { command = { "radian" } },
 				},
-				repl_open_cmd = "vsplit", -- how the REPL opens
+				repl_open_cmd = "vsplit",
 			},
 			keymaps = {
 				send_motion = "<leader>sc",
