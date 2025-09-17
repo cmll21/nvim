@@ -9,6 +9,7 @@ return {
 					sh = { command = { "zsh" } },
 					python = { command = { "ipython" } },
 					r = { command = { "radian" } },
+					rmd = { command = { "radian" } },
 				},
 				repl_open_cmd = "vsplit",
 			},
