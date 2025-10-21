@@ -77,7 +77,6 @@ This is a personal Neovim configuration built with Lua and managed by [lazy.nvim
 | Plugin                                                                | Description        |
 | --------------------------------------------------------------------- | ------------------ |
 | [copilot.lua](https://github.com/zbirenbaum/copilot.lua)              | GitHub Copilot     |
-| [CopilotChat.nvim](https://github.com/CopilotC-Nvim/CopilotChat.nvim) | Copilot chat       |
 | [auto-session](https://github.com/rmagatti/auto-session)              | Session management |
 | [avante.nvim](https://github.com/yetone/avante.nvim)                  | AI Editing         |
 
