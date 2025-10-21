@@ -8,6 +8,7 @@ return {
 				repl_definition = {
 					sh = { command = { "zsh" } },
 					python = { command = { "ipython" } },
+					ocaml = { command = { "ocaml" } },
 				},
 				repl_open_cmd = "vsplit",
 			},
