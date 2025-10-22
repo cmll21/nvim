@@ -7,7 +7,7 @@ return {
 			options = {
 				theme = "auto",
 				icons_enabled = true,
-				section_separators = "", -- cleaner UI
+				section_separators = "",
 				component_separators = "",
 				globalstatus = true,
 				disabled_filetypes = { statusline = { "NvimTree", "lazy" } },
