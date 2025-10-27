@@ -9,6 +9,7 @@ vim.keymap.set("n", "<leader>vc", function() -- Open Neovim config in new tab
 end, { desc = "Open Neovim config in new tab" })
 map("n", "<leader>q", ":q<CR>", opts) -- Quit
 map("n", "<leader>w", ":w<CR>", opts) -- Save
+vim.keymap.set("n", "<leader>z", ":set wrap!<CR>", { desc = "Toggle line wrap" }) -- Toggle line wrap
 
 -- Window management
 vim.keymap.set("n", "<C-h>", "<C-w>h", { desc = "Move to left window" })
