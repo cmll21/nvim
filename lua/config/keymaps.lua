@@ -10,6 +10,16 @@ end, { desc = "Open Neovim config in new tab" })
 map("n", "<leader>q", ":q<CR>", opts) -- Quit
 map("n", "<leader>w", ":w<CR>", opts) -- Save
 vim.keymap.set("n", "<leader>z", ":set wrap!<CR>", { desc = "Toggle line wrap" }) -- Toggle line wrap
+vim.keymap.set("n", "H", "^", { desc = "Go to first non-blank character" })
+vim.keymap.set("n", "L", "$", { desc = "Go to end of line" })
+
+-- Visual mode keymaps
+vim.keymap.set("v", "H", "^", { desc = "Go to first non-blank character" })
+vim.keymap.set("v", "L", "$", { desc = "Go to end of line" })
+
+-- Operator-pending mode keymaps
+vim.keymap.set("o", "H", "^", { desc = "Go to first non-blank character" })
+vim.keymap.set("o", "L", "$", { desc = "Go to end of line" })
 
 -- Window management
 vim.keymap.set("n", "<C-h>", "<C-w>h", { desc = "Move to left window" })
